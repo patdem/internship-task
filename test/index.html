@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2 - tests</title>
+        <!-- mocha -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.3.2/mocha.min.css" 
+        integrity="sha512-6RWs5FczsXwODIZJoL0szz3bXX5W+q/m7bFVQ7HSwZbBXd7PpyYrg2f9Dr4Y2Guqi5k4NJsemxXuiiFoI8fQ4A==" 
+        crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.3.2/mocha.min.js" 
+        integrity="sha512-TfAL33PtGUxii1awTCbr3qbzQT5fYi7ItCGUfzWlnMJ4cK5BA8JNY4gJzEs+tQVbyElVbtcI2Jlaf9EFVMvyeg==" 
+        crossorigin="anonymous"></script>
+        <script>
+            mocha.setup('bdd');
+        </script>
+
+        <!-- chai -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js" 
+        integrity="sha512-gkZWobgJrQevN2HMEeTnSlxWPJ3HS0JJ3nXcgI6XLK/NI0z59jbztRZqbTlIzfl21vIGahQaeW0knwH1az/tbg==" 
+        crossorigin="anonymous"></script>
+        <script>
+            let assert = chai.assert;
+        </script>
+    </head>
+
+    <body>
+        <script src='../scripts/postsPerUser.js'></script>
+        <script src='../scripts/duplicatedTitles.js'></script>
+        <script src='../scripts/nearestNeighbours.js'></script>
+
+        <script src="./test.js"></script>
+
+        <div id="mocha"></div>
+
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exercise 2</title>
+    </head>
+
+    <body>
+        <h1>Click on the buttons to get the answers</h1>
+        
+        <div>
+            <button onclick="countPostsByUserId()">Count posts per user</button>
+            <p id="postPerUser"></p>
+        </div>
+        
+        <div>
+            <button onclick="getDuplicatedPostsTitle()">Get duplicated titles of posts</button>
+            <p id="duplicatedPosts"></p>
+        </div>
+
+        <div>
+            <button onclick="findNearestUser()">Find the nearest neighour for each user</button>
+            <p id="nearestNeighbours"></p>
+        </div>
+
+        <hr/>
+        
+        <div>
+            <p><a href="./test/index.html" target="_blank">Run tests</a></p>
+            <p><a href="https://github.com/patdem/internship-task" target="_blank">View at Github</a></p>
+        </div>
+
+        <script src='scripts/postsPerUser.js'></script>
+        <script src='scripts/duplicatedTitles.js'></script>
+        <script src='scripts/nearestNeighbours.js'></script>
+    </body>
+</html> 
